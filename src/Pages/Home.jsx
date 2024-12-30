@@ -1,18 +1,22 @@
 import React from "react";
 import Container from "../Components/Container";
 import ParagraphText from "../Layers/ParagraphText";
-import { FaArrowRight, FaWhatsapp } from "react-icons/fa";
+import { FaArrowRight, FaPlay, FaWhatsapp } from "react-icons/fa";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import Button from "../Layers/Button";
 import banner01 from "../assets/banner_img1.png";
 import banner02 from "../assets/banner_img2.png";
 import banner03 from "../assets/banner_img3.png";
+import service01 from "../assets/service_Img1.png";
+import service02 from "../assets/service_Img2.png";
+import Title from "../Layers/Title";
 
 const Home = () => {
   return (
     <div className="">
+      {/* section 01 (intro) */}
       <section id="banner" className="pt-5 md:pt-8 lg:pt-[53px]">
-        <Container className="flex flex-col gap-y-6 md:flex-row md:justify-between md:items-center">
+        <Container className="flex flex-col gap-y-10 md:flex-row md:justify-between md:items-center">
           <div className="texts lg:w-[700px] md:w-[400px] w-full flex flex-col items-start justify-start lg:gap-y-12 md:gap-y-8 gap-y-6">
             <h1 className="lg:text-7xl md:text-5xl text-4xl md:w-auto w-[380px] text-headingText font-semibold leading-[110%] tracking-tight">
               Stay ahead of the curve with our forward-thinking
@@ -184,9 +188,13 @@ const Home = () => {
           </div>
           <div className="figures lg:w-[588px] md:w-[330px] flex flex-wrap gap-y-4 lg:gap-y-5 justify-between">
             <div className="lg:w-[300px] lg:h-[281px] md:w-[160px] md:h-[158px] w-[190px] md:rounded-b-[20px] rounded-b-xl rounded-tl-[228px] md:rounded-tr-[20px] rounded-tr-xl relative">
-              <img src={banner03} alt="" className="h-full w-full md:rounded-b-[20px] rounded-b-xl rounded-tl-[228px] md:rounded-tr-[20px] rounded-tr-xl" />
+              <img
+                src={banner03}
+                alt=""
+                className="h-full w-full md:rounded-b-[20px] rounded-b-xl rounded-tl-[228px] md:rounded-tr-[20px] rounded-tr-xl"
+              />
               <div className="circle absolute lg:top-[-32px] top-[-16px] lg:right-10 right-5 lg:w-[108px] lg:h-[108px] w-[60px] h-[60px] rounded-full bg-headingText flex items-center justify-center ">
-                <FaArrowTrendUp className="text-button lg:text-4xl text-xl"/>
+                <FaArrowTrendUp className="text-button lg:text-4xl text-xl" />
               </div>
             </div>
             <div className="lg:w-[259px] lg:h-[281px] md:w-[150px] w-[169px] md:h-[158px] md:rounded-[20px] rounded-xl bg-slate-300">
@@ -195,6 +203,36 @@ const Home = () => {
             <div className="w-full bg-slate-400 lg:h-[216px] rounded-[20px]">
               <img src={banner02} alt="" className="h-full w-full" />
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* section 02 (services) */}
+      <section id="service" className="lg:pt-[135px] md:pt-20 pt-14">
+        <Container>
+          <div className="head flex flex-col lg:flex-row gap-y-5 justify-between lg:mb-[75px] md:mb-9F mb-8">
+            <Title
+              className="text-headingText lg:w-[684px]"
+              text="Provide the best service with out of the box ideas"
+            />
+            <ParagraphText
+              className="lg:w-[557px]"
+              text="We are a passionate team of digital marketing enthusiasts dedicated to helping businesses succeed in the digital world. With years of experience and a deep understanding of the ever-evolving online landscape, we stay at the forefront of industry trends and technologies."
+            />
+          </div>
+          <div className="box flex flex-col md:flex-row lg:gap-6 gap-4">
+            <div className="child lg:w-[438px] lg:h-[382px] md:w-[280px] lg:rounded-[30px] ">
+              <img src={service01} alt="" className="w-full h-full" />
+            </div>
+            <div className="video lg:w-[818px] lg:h-[382px] md:w-[440px] relative">
+              <img src={service02} alt="" className="w-full h-full" />
+              <div className="play absolute lg:bottom-[-15px] lg:right-[-20px] bottom-[-8px] right-[-6px] lg:w-[163px] lg:h-[163px] md:w-[83px] md:h-[83px] w-[60px] h-[60px] rounded-full lg:border-[12px] md:border-[8px] border-[5px] border-whiteText bg-button flex items-center justify-center">
+                <FaPlay className="lg:text-5xl md:text-2xl text-lg" />
+              </div>
+            </div>
+          </div>
+          <div className="service lg:pt-16 lg:pb-12 md:pt-10 md:pb-6 pt-8 pb-5">
+            <Title text="Our Services" />
           </div>
         </Container>
       </section>

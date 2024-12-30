@@ -31,7 +31,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="lg:py-[30px] md:py-4 py-2 bg-white border-b drop-shadow-md sticky top-0 left-0 w-full z-50">
+    <div className="lg:py-[30px] md:py-6 py-4 bg-white border-b drop-shadow-md sticky top-0 left-0 w-full z-50">
       <Container className="flex justify-between items-center relative z-50">
         <div className="logo lg:w-[139px] lg:h-8 md:w-[130px] w-[110px]">
           <img src={logo} alt="" />
