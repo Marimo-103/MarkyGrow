@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --Background: #fff;
+    --GradientBG1: linear-gradient(180deg, #271D3E 0%, #472D6C 100%);
+    --GradientBG2: linear-gradient(90deg, #271D3E 1%, #472D6C 99%);
+    --paragraph: #9688B7;
+    --headings: #271D3E;
+    --button: #41DEF3;
+    --buttonText: #24104b;
+    --buttonTextHover: #fff;
+    --whiteText: #fff;
+    --socialIcons: #41DEF3;
+}
