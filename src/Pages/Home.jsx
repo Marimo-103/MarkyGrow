@@ -24,8 +24,10 @@ const Home = () => {
       <section id="ready" className="pt-[57px]">
         <Container>
           <div className="flex md:flex-row flex-col gap-y-5 justify-between items-center lg:py-[30px] lg:px-16 md:p-6 px-3 py-4 lg:rounded-[30px] md:rounded-2xl rounded-xl bg-gradient-to-br from-GradBackground01 to-GradBackground02">
-            <h1 className="text-whiteText lg:text-[80px] text-4xl font-semibold tracking-tighter leading-[130%]">Ready to work with us ?</h1>
-            <Button className='hover:text-buttonTextHover'>
+            <h1 className="text-whiteText lg:text-[80px] md:text-4xl text-3xl font-semibold tracking-tighter leading-[130%]">
+              Ready to work with us ?
+            </h1>
+            <Button className="hover:text-buttonTextHover">
               Get Started
               <FaArrowRight />
             </Button>
@@ -38,7 +40,6 @@ const Home = () => {
 
       {/* section 05 (contact us) */}
       <Contact />
-      
     </div>
   );
 };
