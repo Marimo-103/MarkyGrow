@@ -42,7 +42,7 @@ const PortfolioSlider = () => {
       <Slider {...settings}>
         <div className="lg:w-[350px] lg:h-[350px] md:w-[230px] md:h-[230px] w-[150px] h-[150px]">
           <div className="lg:p-5 md:p-5 p-3  h-full w-full">
-            <div className="border-[10px] rounded-[20px] border-paragraphText border-opacity-35 backdrop-blur-[67px] w-full h-full">
+            <div className="lg:border-[8px] border-[4px] lg:rounded-[20px] rounded-[12px] border-paragraphText border-opacity-35 backdrop-blur-[67px] w-full h-full">
               <div className="img">
                 jhvjgvj
                 <img src="" alt="" />
@@ -52,7 +52,7 @@ const PortfolioSlider = () => {
         </div>
         <div className="lg:w-[350px] lg:h-[350px] md:w-[230px] md:h-[230px] w-[150px] h-[150px]">
           <div className="lg:p-5 md:p-5 p-3  h-full w-full">
-            <div className="border-[10px] rounded-[20px] border-paragraphText border-opacity-35 backdrop-blur-[67px] w-full h-full">
+            <div className="lg:border-[8px] border-[4px] lg:rounded-[20px] rounded-[12px] border-paragraphText border-opacity-35 backdrop-blur-[67px] w-full h-full">
               <div className="img">
                 jhvjgvj
                 <img src="" alt="" />
@@ -62,7 +62,7 @@ const PortfolioSlider = () => {
         </div>
         <div className="lg:w-[350px] lg:h-[350px] md:w-[230px] md:h-[230px] w-[150px] h-[150px]">
           <div className="lg:p-5 md:p-5 p-3  h-full w-full">
-            <div className="border-[10px] rounded-[20px] border-paragraphText border-opacity-35 backdrop-blur-[67px] w-full h-full">
+            <div className="lg:border-[8px] border-[4px] lg:rounded-[20px] rounded-[12px] border-paragraphText border-opacity-35 backdrop-blur-[67px] w-full h-full">
               <div className="img">
                 jhvjgvj
                 <img src="" alt="" />
@@ -72,7 +72,7 @@ const PortfolioSlider = () => {
         </div>
         <div className="lg:w-[350px] lg:h-[350px] md:w-[230px] md:h-[230px] w-[150px] h-[150px]">
           <div className="lg:p-5 md:p-5 p-3  h-full w-full">
-            <div className="border-[10px] rounded-[20px] border-paragraphText border-opacity-35 backdrop-blur-[67px] w-full h-full">
+            <div className="lg:border-[8px] border-[4px] lg:rounded-[20px] rounded-[12px] border-paragraphText border-opacity-35 backdrop-blur-[67px] w-full h-full">
               <div className="img">
                 jhvjgvj
                 <img src="" alt="" />

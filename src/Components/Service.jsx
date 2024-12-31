@@ -51,9 +51,9 @@ const Service = () => {
         </div>
         <div className="service lg:pt-16 lg:pb-12 md:pt-10 md:pb-6 pt-8 pb-5">
           <Title text="Our Services" className="text-headingText text-center" />
-          <div className="flex flex-wrap md:flex-row flex-col gap-y-5 justify-between mt-10">
+          <div className="flex flex-wrap md:flex-row flex-col gap-y-5 items-center justify-between mt-10">
             {serviceArray.map((item, index) => (
-              <div key={index} className="child lg:w-[400px] lg:h-[210px] md:w-[350px] md:h-[140px] w-full h-[120px] bg-gradient-to-b from-GradBackground01 to-GradBackground02 border md:rounded-[20px] rounded-xl lg:p-8 md:p-6 p-4 flex items-center justify-between">
+              <div key={index} className="child lg:w-[400px] lg:h-[210px] md:w-[350px] md:h-[180px] w-[80%] h-[160px] bg-gradient-to-b from-GradBackground01 to-GradBackground02 border md:rounded-[20px] rounded-xl lg:p-8 md:p-6 p-4 flex items-center justify-between">
                 <h3 className="lg:text-2xl text-whiteText font-semibold w-1/2">
                   {item.title}
                 </h3>

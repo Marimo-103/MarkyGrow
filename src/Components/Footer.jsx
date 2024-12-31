@@ -12,7 +12,9 @@ const Footer = () => {
       <Container className="flex flex-col md:flex-row gap-y-8 justify-between lg:py-8 py-4">
         <div className="text flex flex-col lg:gap-[30px] gap-4 lg:w-[534px] md:w-[350px] ">
           <div className="logo lg:w-[300px] md:w-[230px] w-[150px]">
-            <img src={footer_logo} alt="Logo" />
+            <a href="#">
+              <img src={footer_logo} alt="Logo" />
+            </a>
           </div>
           <ParagraphText text="We offers a comprehensive suite of digital marketing services that cover all aspects of our online presence. From SEO and social media marketing to content creation and PPC advertising, they have the expertise and resources to handle our diverse marketing needs." />
           <div className="icons flex items-center gap-3">
@@ -104,9 +106,12 @@ const Footer = () => {
           </ul>
         </div>
       </Container>
-      <Container className='lg:pb-8 pb-3'>
+      <Container className="lg:pb-8 pb-3">
         <div className="line h-[1px] w-full bg-paragraphText opacity-40"></div>
-        <ParagraphText className='text-center mt-1 opacity-50' text='copyright@allrightsreserved'/>
+        <ParagraphText
+          className="text-center mt-1 opacity-50"
+          text="copyright@allrightsreserved"
+        />
       </Container>
     </footer>
   );

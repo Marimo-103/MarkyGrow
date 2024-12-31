@@ -6,6 +6,7 @@ import Introduction from "../Components/Introduction";
 import Service from "../Components/Service";
 import About from "../Components/About";
 import Portfolio from "../Components/Portfolio";
+import Contact from "../Components/Contact";
 
 const Home = () => {
   return (
@@ -34,6 +35,10 @@ const Home = () => {
 
       {/* section 04 (portfolio) */}
       <Portfolio />
+
+      {/* section 05 (contact us) */}
+      <Contact />
+      
     </div>
   );
 };
