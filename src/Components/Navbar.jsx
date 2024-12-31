@@ -55,6 +55,12 @@ const Navbar = () => {
               <FaChevronDown className="text-xs" />
             </li>
             <li className="flex lg:gap-2 gap-1 items-center justify-center text-headingText font-semibold hover:text-black">
+              <a href="#portfolio" className="lg:text-sm">
+                Portfolio
+              </a>
+              <FaChevronDown className="text-xs" />
+            </li>
+            <li className="flex lg:gap-2 gap-1 items-center justify-center text-headingText font-semibold hover:text-black">
               <a href="#contact" className="lg:text-sm">
                 Contact Us
               </a>

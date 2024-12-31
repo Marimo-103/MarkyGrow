@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "./Container";
-import footer_logo from "../../public/footer_logo.png";
+import footer_logo from "/footer_logo.png";
 import ParagraphText from "../Layers/ParagraphText";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { BiSolidPhone } from "react-icons/bi";
@@ -52,6 +52,11 @@ const Footer = () => {
             <li>
               <a href="#service">
                 <ParagraphText text="Our Services" />
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio">
+                <ParagraphText text="Portfolio" />
               </a>
             </li>
             <li>
