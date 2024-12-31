@@ -2,11 +2,10 @@ import React from "react";
 import Container from "../Components/Container";
 import ParagraphText from "../Layers/ParagraphText";
 import { FaArrowRight, FaWhatsapp } from "react-icons/fa";
-import { FaArrowTrendUp } from "react-icons/fa6";
 import Button from "../Layers/Button";
 import banner01 from "../assets/banner_img1.png";
 import banner02 from "../assets/banner_img2.png";
-import banner03 from "../assets/banner_img3.png";
+import bannerIllustration from "../assets/bannerIllustration.svg";
 
 const Introduction = () => {
   return (
@@ -182,15 +181,8 @@ const Introduction = () => {
           </div>
         </div>
         <div className="figures lg:w-[588px] md:w-[330px] flex flex-wrap gap-y-4 lg:gap-y-5 justify-between">
-          <div className="lg:w-[300px] lg:h-[281px] md:w-[160px] md:h-[158px] w-[190px] md:rounded-b-[20px] rounded-b-xl rounded-tl-[228px] md:rounded-tr-[20px] rounded-tr-xl relative">
-            <img
-              src={banner03}
-              alt=""
-              className="h-full w-full md:rounded-b-[20px] rounded-b-xl rounded-tl-[228px] md:rounded-tr-[20px] rounded-tr-xl"
-            />
-            <div className="circle absolute lg:top-[-32px] top-[-16px] lg:right-10 right-5 lg:w-[108px] lg:h-[108px] w-[60px] h-[60px] rounded-full bg-headingText flex items-center justify-center ">
-              <FaArrowTrendUp className="text-button lg:text-4xl text-xl" />
-            </div>
+          <div className="lg:w-[300px] lg:h-[281px] md:w-[150px] w-[169px] md:h-[158px] md:rounded-[20px] rounded-xl">
+            <img src={bannerIllustration} alt="" className="h-full w-full" />
           </div>
           <div className="lg:w-[259px] lg:h-[281px] md:w-[150px] w-[169px] md:h-[158px] md:rounded-[20px] rounded-xl bg-slate-300">
             <img src={banner01} alt="" className="h-full w-full" />
