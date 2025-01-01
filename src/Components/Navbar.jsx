@@ -25,9 +25,15 @@ const Navbar = () => {
     window.addEventListener("resize", size);
   }, []);
   useEffect(() => {
-    document.addEventListener("click", (e) => {
-      console.log(menuRef);
-    });
+    let handler = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        setShowMenu(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
   }, []);
 
   return (
@@ -43,6 +49,7 @@ const Navbar = () => {
             className={`flex flex-col lg:flex-row lg:justify-normal items-start lg:gap-8 gap-2 lg:static absolute top-full md:right-4 right-3 lg:bg-transparent bg-button lg:p-0 md:px-6 md:py-7 px-4 py-5 rounded-md duration-300 z-50 ${
               showMenu ? "opacity-100 visible" : "opacity-0 invisible"
             }`}
+            ref={menuRef}
           >
             <li className="flex lg:gap-2 gap-1 items-center justify-center text-headingText font-semibold hover:text-black">
               <a href="#service" className="lg:text-sm ">
