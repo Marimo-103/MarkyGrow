@@ -28,20 +28,20 @@ const Service = () => {
   return (
     <section id="service" className="lg:pt-[135px] md:pt-20 pt-14">
       <Container>
-        <div className="head flex flex-col lg:flex-row gap-y-5 justify-between lg:mb-[75px] md:mb-9F mb-8">
+        <div className="head flex flex-col lg:flex-row gap-y-5 justify-center lg:mb-[75px] md:mb-9F mb-8">
           <Title
-            className="text-headingText lg:w-[684px]"
-            text="Provide the best service with out of the box ideas"
+            className="text-headingText text-center"
+            text="We provide the best services possible for business growth"
           />
-          <ParagraphText
+          {/* <ParagraphText
             className="lg:w-[557px]"
             text="We are a passionate team of digital marketing enthusiasts dedicated to helping businesses succeed in the digital world. With years of experience and a deep understanding of the ever-evolving online landscape, we stay at the forefront of industry trends and technologies."
-          />
+          /> */}
         </div>
-        <div className="box flex flex-col md:flex-row lg:gap-6 gap-4">
-          <div className="child lg:w-[438px] lg:h-[382px] md:w-[280px] lg:rounded-[30px] ">
+        <div className="box flex flex-col md:flex-row lg:gap-6 gap-4 justify-center">
+          {/* <div className="child lg:w-[438px] lg:h-[382px] md:w-[280px] lg:rounded-[30px] ">
             <img src={service01} alt="" className="w-full h-full" />
-          </div>
+          </div> */}
           <div className="video lg:w-[818px] lg:h-[382px] md:w-[440px] relative">
             <img src={service02} alt="" className="w-full h-full" />
             <div className="play absolute lg:bottom-[-15px] lg:right-[-20px] bottom-[-8px] right-[-6px] lg:w-[163px] lg:h-[163px] md:w-[83px] md:h-[83px] w-[60px] h-[60px] rounded-full lg:border-[12px] md:border-[8px] border-[5px] border-whiteText bg-button flex items-center justify-center">

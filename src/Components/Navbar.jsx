@@ -53,19 +53,20 @@ const Navbar = () => {
           >
             <li className="flex lg:gap-2 gap-1 items-center justify-center text-headingText font-semibold hover:text-black">
               <a href="#service" className="lg:text-sm ">
-                Our Services
+                Services
+              </a>
+              <FaChevronDown className="text-xs" />
+            </li>
+
+            <li className="flex lg:gap-2 gap-1 items-center justify-center text-headingText font-semibold hover:text-black">
+              <a href="#portfolio" className="lg:text-sm">
+                Portfolio
               </a>
               <FaChevronDown className="text-xs" />
             </li>
             <li className="flex lg:gap-2 gap-1 items-center justify-center text-headingText font-semibold hover:text-black">
               <a href="#about" className="lg:text-sm">
                 About Us
-              </a>
-              <FaChevronDown className="text-xs" />
-            </li>
-            <li className="flex lg:gap-2 gap-1 items-center justify-center text-headingText font-semibold hover:text-black">
-              <a href="#portfolio" className="lg:text-sm">
-                Portfolio
               </a>
               <FaChevronDown className="text-xs" />
             </li>
@@ -99,9 +100,9 @@ const Navbar = () => {
                   </a>
                 </div>
               </div>
-              <div className="theme">
+              {/* <div className="theme">
                 <Switch />
-              </div>
+              </div> */}
             </div>
           </ul>
           <div
@@ -139,9 +140,9 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-          <div className="theme">
+          {/* <div className="theme">
             <Switch />
-          </div>
+          </div> */}
         </div>
       </Container>
     </div>

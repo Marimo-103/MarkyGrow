@@ -13,20 +13,19 @@ const Introduction = () => {
       <Container className="flex flex-col gap-y-10 md:flex-row md:justify-between md:items-center">
         <div className="texts lg:w-[700px] md:w-[400px] w-full flex flex-col items-start justify-start lg:gap-y-12 md:gap-y-8 gap-y-6">
           <h1 className="lg:text-7xl md:text-5xl text-4xl md:w-auto w-[380px] text-headingText font-semibold leading-[110%] tracking-tight">
-            Stay ahead of the curve with our forward-thinking
+            Helping Businesses Navigate the dynamic world of Meta platforms
           </h1>
           <ParagraphText
-            text="An award-winning SEO agency with disciplines in digital marketing, design,
-              and website development. focused on understanding you."
+            text="We run effective ads & provide tailored designs for your business growth across meta platforms."
           />
           <Button className="relative group" href="">
-            Schedule Call{" "}
+            Contact us{" "}
             <FaArrowRight className="md:text-xl text-base group-hover:invisible group-hover:opacity-0 duration-300" />
             <div className="absolute top-1/2 -translate-y-1/2 right-0 z-[-1] group-hover:translate-x-[120%] duration-300">
               <FaWhatsapp className="md:text-3xl text-xl" />
             </div>
           </Button>
-          <div className="sponsors flex lg:flex-row flex-col lg:items-center lg:gap-16 md:gap-3 gap-2">
+          {/* <div className="sponsors flex lg:flex-row flex-col lg:items-center lg:gap-16 md:gap-3 gap-2">
             <p className="lg:w-[150px] text-sm text-headingText font-semibold leading-[160%]">
               Trusted by the world's biggest brands:
             </p>
@@ -178,7 +177,7 @@ const Introduction = () => {
                 </svg>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="figures lg:w-[588px] md:w-[330px] flex flex-wrap gap-y-4 lg:gap-y-5 justify-between">
           <div className="lg:w-[300px] lg:h-[281px] md:w-[150px] w-[169px] md:h-[158px] md:rounded-[20px] rounded-xl">

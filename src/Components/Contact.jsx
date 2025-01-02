@@ -19,6 +19,7 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          alert('We recieved your mail successfully. We will contact You soon!')
         },
         (error) => {
           console.log("FAILED...", error.text);

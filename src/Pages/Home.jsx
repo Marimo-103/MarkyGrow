@@ -17,8 +17,8 @@ const Home = () => {
       {/* section 02 (services) */}
       <Service />
 
-      {/* section 03 (about us) */}
-      <About />
+      {/* section 03 (portfolio) */}
+      <Portfolio />
 
       {/* ready to work with us */}
       <section id="ready" className="pt-[57px]">
@@ -35,8 +35,8 @@ const Home = () => {
         </Container>
       </section>
 
-      {/* section 04 (portfolio) */}
-      <Portfolio />
+      {/* section 04 (about us) */}
+      <About />
 
       {/* section 05 (contact us) */}
       <Contact />
