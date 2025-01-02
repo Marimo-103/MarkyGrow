@@ -10,18 +10,18 @@ const Service = () => {
   let serviceArray = [
     {
       id: 1,
-      title: "Service 01",
-      image: "Service 01 image",
+      title: "Full Stack F-commerce",
+      description: "we establish and manage your business presence on Facebook and Instagram, design unique logos and covers, create engaging post designs.",
     },
     {
       id: 2,
-      title: "Service 02",
-      image: "Service 02 image",
+      title: "Meta Ads",
+      description: "we offer strategic campaign ideas and budgeting, create visually compelling ad designs, and craft persuasive ad copy.",
     },
     {
       id: 3,
-      title: "Service 03",
-      image: "Service 03 image",
+      title: "Customised Service",
+      description: "enjoy services specifically tailored to your business requirements.",
     },
   ];
 
@@ -53,14 +53,13 @@ const Service = () => {
           <Title text="Our Services" className="text-headingText text-center" />
           <div className="flex flex-wrap md:flex-row flex-col gap-y-5 items-center justify-between mt-10">
             {serviceArray.map((item, index) => (
-              <div key={index} className="child lg:w-[400px] lg:h-[210px] md:w-[350px] md:h-[180px] w-[80%] h-[160px] bg-gradient-to-b from-GradBackground01 to-GradBackground02 border md:rounded-[20px] rounded-xl lg:p-8 md:p-6 p-4 flex items-center justify-between">
-                <h3 className="lg:text-2xl text-whiteText font-semibold w-1/2">
+              <div key={index} className="child lg:w-[400px] lg:h-[210px] md:w-[350px] md:h-[180px] w-[80%] h-[160px]  bg-gradient-to-b from-GradBackground01 to-GradBackground02 border md:rounded-[20px] rounded-xl lg:p-8 md:p-6 p-4 flex flex-col lg:gap-y-4 items-center justify-evenly shadow-icons">
+                <h3 className="lg:text-2xl text-whiteText font-bold">
                   {item.title}
                 </h3>
-                <div className="img w-1/2 lg:h-[150px] md:h-[100px] h-[80px] border bg-[#f3f3f3]">
-                  {item.img}
-                  <img src={item.img} alt="" />
-                </div>
+                <p className="lg:text-sm text-xs text-whiteText font-normal leading-[180%] text-center">
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>

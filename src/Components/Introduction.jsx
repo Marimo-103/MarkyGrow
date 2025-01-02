@@ -179,7 +179,7 @@ const Introduction = () => {
             </div>
           </div> */}
         </div>
-        <div className="figures lg:w-[588px] md:w-[330px] flex flex-wrap gap-y-4 lg:gap-y-5 justify-between">
+        <div className="figures lg:w-[588px] md:w-[330px] flex flex-wrap gap-y-4 lg:gap-y-5 justify-evenly">
           <div className="lg:w-[300px] lg:h-[281px] md:w-[150px] w-[169px] md:h-[158px] md:rounded-[20px] rounded-xl">
             <img src={bannerIllustration} alt="" className="h-full w-full" />
           </div>

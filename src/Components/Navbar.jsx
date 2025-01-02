@@ -15,7 +15,7 @@ const Navbar = () => {
   let menuRef = useRef();
   useEffect(() => {
     function size() {
-      if (window.innerWidth < 1024) {
+      if (window.innerWidth < 1000) {
         setShowMenu(false);
       } else {
         setShowMenu(true);
