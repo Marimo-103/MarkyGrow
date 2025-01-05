@@ -113,10 +113,18 @@ const Footer = () => {
       </Container>
       <Container className="lg:pb-8 pb-3">
         <div className="line h-[1px] w-full bg-paragraphText opacity-40"></div>
-        <ParagraphText
-          className="text-center mt-1 opacity-50"
-          text="copyright@allrightsreserved"
-        />
+        <div className="flex md:flex-row flex-col justify-evenly items-center mt-1 opacity-50">
+          <ParagraphText
+            className=""
+            text="© MarkyGrow. All rights reserved."
+          />
+          <div className="flex gap-1">
+            <ParagraphText className="" text="Designed and Developed by" />
+            <a className="underline" href="https://www.fiverr.com/s/pdANBqZ">
+              <ParagraphText text="Mahmudul" />
+            </a>
+          </div>
+        </div>
       </Container>
     </footer>
   );
