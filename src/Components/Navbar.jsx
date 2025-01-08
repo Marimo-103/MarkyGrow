@@ -16,7 +16,15 @@ const Navbar = () => {
   useEffect(() => {
     function size() {
       if (window.innerWidth < 1000) {
-        setShowMenu(false);
+        let handler = (e) => {
+          if (!menuRef.current.contains(e.target)) {
+            setShowMenu(false);
+          }
+        };
+        document.addEventListener("mousedown", handler);
+        return () => {
+          document.removeEventListener("mousedown", handler);
+        };
       } else {
         setShowMenu(true);
       }
@@ -24,17 +32,17 @@ const Navbar = () => {
     size();
     window.addEventListener("resize", size);
   }, []);
-  useEffect(() => {
-    let handler = (e) => {
-      if (!menuRef.current.contains(e.target)) {
-        setShowMenu(false);
-      }
-    };
-    document.addEventListener("mousedown", handler);
-    return () => {
-      document.removeEventListener("mousedown", handler);
-    };
-  }, []);
+  // useEffect(() => {
+  //   let handler = (e) => {
+  //     if (!menuRef.current.contains(e.target)) {
+  //       setShowMenu(false);
+  //     }
+  //   };
+  //   document.addEventListener("mousedown", handler);
+  //   return () => {
+  //     document.removeEventListener("mousedown", handler);
+  //   };
+  // }, []);
 
   return (
     <div className="lg:py-[30px] md:py-6 py-4 bg-white border-b drop-shadow-md sticky top-0 left-0 w-full z-50">
@@ -51,30 +59,30 @@ const Navbar = () => {
             }`}
             ref={menuRef}
           >
-            <li className="flex lg:gap-2 gap-1 items-center justify-center text-headingText font-semibold hover:text-black">
+            <li className="flex lg:gap-2 gap-1 items-center justify-center text-headingText font-semibold hover:text-black group">
               <a href="#service" className="lg:text-sm ">
                 Services
               </a>
-              <FaChevronDown className="text-xs" />
+              <FaChevronDown className="text-xs group-hover:text-button duration-300" />
             </li>
 
-            <li className="flex lg:gap-2 gap-1 items-center justify-center text-headingText font-semibold hover:text-black">
+            <li className="flex lg:gap-2 gap-1 items-center justify-center text-headingText font-semibold hover:text-black group">
               <a href="#portfolio" className="lg:text-sm">
                 Portfolio
               </a>
-              <FaChevronDown className="text-xs" />
+              <FaChevronDown className="text-xs group-hover:text-button duration-300" />
             </li>
-            <li className="flex lg:gap-2 gap-1 items-center justify-center text-headingText font-semibold hover:text-black">
+            <li className="flex lg:gap-2 gap-1 items-center justify-center text-headingText font-semibold hover:text-black group">
               <a href="#about" className="lg:text-sm">
                 About Us
               </a>
-              <FaChevronDown className="text-xs" />
+              <FaChevronDown className="text-xs group-hover:text-button duration-300" />
             </li>
-            <li className="flex lg:gap-2 gap-1 items-center justify-center text-headingText font-semibold hover:text-black">
+            <li className="flex lg:gap-2 gap-1 items-center justify-center text-headingText font-semibold hover:text-black group">
               <a href="#contact" className="lg:text-sm">
                 Contact Us
               </a>
-              <FaChevronDown className="text-xs" />
+              <FaChevronDown className="text-xs group-hover:text-button duration-300" />
             </li>
             <div className="btn flex flex-col lg:hidden gap-4 mt-4 md:mt-6">
               <div className="icons flex items-center gap-3">
@@ -87,7 +95,10 @@ const Navbar = () => {
                   </a>
                 </div>
                 <div className="child lg:w-[34px] lg:h-[34px] w-[28px] h-[28px] rounded-full bg-white shadow-icons flex items-center justify-center text-socialIcons">
-                  <a href="">
+                  <a
+                    href="https://www.linkedin.com/company/markygrow/"
+                    target="_blank"
+                  >
                     <FaLinkedinIn />
                   </a>
                 </div>

@@ -27,7 +27,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="child lg:w-[34px] lg:h-[34px] w-[28px] h-[28px] rounded-full bg-white shadow-icons flex items-center justify-center text-socialIcons">
-              <a href="">
+              <a href="https://www.linkedin.com/company/markygrow/" target="_blank">
                 <FaLinkedinIn />
               </a>
             </div>
@@ -120,7 +120,7 @@ const Footer = () => {
           />
           <div className="flex gap-1">
             <ParagraphText className="" text="Designed and Developed by" />
-            <a className="underline" href="https://www.fiverr.com/s/pdANBqZ">
+            <a className="underline" href="https://www.fiverr.com/s/pdANBqZ" target="_blank">
               <ParagraphText text="Mahmudul" />
             </a>
           </div>

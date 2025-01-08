@@ -2,6 +2,8 @@ import React from "react";
 import Container from "./Container";
 import Title from "../Layers/Title";
 import ParagraphText from "../Layers/ParagraphText";
+import Fuad from '../assets/Fuad.jpg'
+import Shakti from '../assets/Shakti.png'
 
 const About = () => {
   return (
@@ -20,8 +22,8 @@ const About = () => {
           </div>
           <div className="members lg:w-[45%] flex justify-center gap-x-5">
             <div className="child md:w-[300px] flex flex-col items-center gap-y-5">
-                <div className="img md:w-[150px] md:h-[150px] h-[120px] w-[120px] rounded-full border relative">
-                    <img src="" alt="" />
+                <div className="img md:w-[150px] md:h-[150px] h-[120px] w-[120px] rounded-full border border-buttonText md:p-1 p-[2px]">
+                    <img src={Fuad} alt="" className="h-full w-full rounded-full object-cover object-top"/>
                 </div>
                 <div className="text-center">
                     <h4 className="lg:text-2xl text-xl text-headingText font-semibold leading-[120%] tracking-tight">
@@ -31,8 +33,8 @@ const About = () => {
                 </div>
             </div>
             <div className="child md:w-[300px] flex flex-col items-center gap-y-5">
-                <div className="img md:w-[150px] md:h-[150px] h-[120px] w-[120px] rounded-full border">
-                    <img src="" alt="" />
+                <div className="img md:w-[150px] md:h-[150px] h-[120px] w-[120px] rounded-full border border-buttonText md:p-1 p-[2px]">
+                    <img src={Shakti} alt="" className="h-full w-full rounded-full object-cover object-bottom"/>
                 </div>
                 <div className="text-center">
                     <h4 className="lg:text-2xl text-xl text-headingText font-semibold leading-[120%] tracking-tight">

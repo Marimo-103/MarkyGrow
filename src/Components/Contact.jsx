@@ -72,7 +72,7 @@ const Contact = () => {
               value="Send"
               className="hover:text-buttonTextHover w-[300px] lg:w-[500px] md:w-[380px]"
             >
-              Send Message
+              Send
               <FaArrowRight />
             </Button>
           </form>
