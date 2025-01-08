@@ -70,7 +70,7 @@ const Navbar = () => {
 
   return (
     <div className="lg:py-[30px] md:py-6 py-4 bg-white dark:bg-BgDark dark:duration-300 border-b dark:border-BgDark drop-shadow-md dark:drop-shadow-2xl sticky top-0 left-0 w-full z-50">
-      <Container className="flex justify-between items-center relative z-50">
+      <Container className="flex justify-between items-center z-50">
         <div className="logo lg:w-[139px] lg:h-8 md:w-[130px] w-[110px]">
           <a href="#">
             <img src={logo} alt="" />
@@ -78,7 +78,7 @@ const Navbar = () => {
         </div>
         <nav className="">
           <ul
-            className={`flex flex-col lg:flex-row lg:justify-normal items-start lg:gap-8 gap-2 lg:static absolute top-full md:right-4 right-3 lg:bg-transparent dark:lg:bg-transparent bg-button dark:bg-GradBackground02 lg:p-0 md:px-6 md:py-7 px-4 py-5 rounded-md duration-300 z-50 ${
+            className={`flex flex-col lg:flex-row lg:justify-normal items-start lg:gap-8 gap-2 lg:static absolute top-full md:right-4 right-3 lg:bg-transparent dark:lg:bg-transparent bg-button dark:bg-GradBackground02 lg:p-0 md:pl-8 md:pr-20 md:py-7 pl-6 pr-12 py-5 rounded-md duration-300 z-50 ${
               showMenu ? "opacity-100 visible" : "opacity-0 invisible"
             }`}
             ref={menuRef}
