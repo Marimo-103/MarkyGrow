@@ -45,6 +45,7 @@ const PortfolioSlider = () => {
           slidesToScroll: 1,
           infinite: true,
           dots: true,
+          arrows: false,
         },
       },
       {
@@ -54,6 +55,7 @@ const PortfolioSlider = () => {
           slidesToScroll: 1,
           initialSlide: 1,
           dots: false,
+          arrows: false,
         },
       },
       {
@@ -62,6 +64,7 @@ const PortfolioSlider = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           dots: false,
+          arrows: false,
         },
       },
     ],
