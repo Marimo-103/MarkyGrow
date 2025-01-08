@@ -78,7 +78,7 @@ const Navbar = () => {
         </div>
         <nav className="">
           <ul
-            className={`flex flex-col lg:flex-row lg:justify-normal items-start lg:gap-8 gap-2 lg:static absolute top-full md:right-4 right-3 lg:bg-transparent dark:lg:bg-transparent bg-button dark:bg-GradBackground02 lg:p-0 md:pl-8 md:pr-20 md:py-7 pl-6 pr-12 py-5 rounded-md duration-300 z-50 ${
+            className={`flex flex-col lg:flex-row lg:justify-normal items-start lg:gap-8 gap-2 lg:static absolute top-full right-0 lg:bg-transparent dark:lg:bg-transparent bg-button dark:bg-GradBackground02 lg:p-0 md:pl-8 md:pr-20 md:py-7 pl-6 pr-12 py-5 rounded-md duration-300 z-50 ${
               showMenu ? "opacity-100 visible" : "opacity-0 invisible"
             }`}
             ref={menuRef}
