@@ -21,13 +21,13 @@ const Home = () => {
       <Portfolio />
 
       {/* ready to work with us */}
-      <section id="ready" className="pt-[57px]">
+      <section id="ready" className="pt-[57px] dark:bg-BgDark dark:duration-300 duration-300">
         <Container>
-          <div className="flex md:flex-row flex-col gap-y-5 justify-between items-center lg:py-[28px] xl:py-[60px] xl:px-10 lg:px-10 md:p-6 px-3 py-4 lg:rounded-[30px] md:rounded-2xl rounded-xl bg-gradient-to-br from-GradBackground01 to-GradBackground02">
-            <h1 className="text-whiteText text-center lg:text-[80px] md:text-4xl text-3xl font-semibold tracking-tighter leading-[130%]">
+          <div className="flex md:flex-row flex-col gap-y-5 justify-between items-center lg:py-[28px] xl:py-[60px] xl:px-10 lg:px-10 md:p-6 px-3 py-4 lg:rounded-[30px] md:rounded-2xl rounded-xl bg-gradient-to-br from-GradBackground01 to-GradBackground02 dark:from-GradBackground01Dark dark:to-GradBackground02Dark dark:duration-300 duration-300">
+            <h1 className="text-whiteText dark:text-BgDark dark:duration-300 duration-300 text-center lg:text-[80px] md:text-4xl text-3xl font-semibold tracking-tighter leading-[130%]">
               Ready to work with us ?
             </h1>
-            <Button className="hover:text-buttonTextHover">
+            <Button className="hover:text-buttonTextHover dark:hover:text-buttonText">
               <a href="#contact">Get Started</a>
               <FaArrowRight />
             </Button>

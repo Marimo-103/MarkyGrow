@@ -4,25 +4,28 @@ import ParagraphText from "../Layers/ParagraphText";
 import { FaArrowRight, FaWhatsapp } from "react-icons/fa";
 import Button from "../Layers/Button";
 import banner01 from "../assets/banner_img1.png";
+import banner01Dark from "../assets/banner_img1Dark.png";
 import banner02 from "../assets/banner_img2.png";
+import banner02Dark from "../assets/banner_img2Dark.png";
 import bannerIllustration from "../assets/bannerIllustration.svg";
+import bannerIllustrationDark from "../assets/bannerIllustrationDark.svg";
 
 const Introduction = () => {
   return (
-    <section id="banner" className="pt-5 md:pt-8 lg:pt-[53px]">
+    <section id="banner" className="pt-5 md:pt-8 lg:pt-[53px] dark:bg-BgDark dark:duration-300 duration-300">
       <Container className="flex flex-col gap-y-10 md:flex-row md:justify-between md:items-center">
         <div className="texts lg:w-[700px] md:w-[400px] w-full flex flex-col items-start justify-start lg:gap-y-12 md:gap-y-8 gap-y-6">
-          <h1 className="lg:text-7xl md:text-5xl text-4xl md:w-auto w-[380px] text-headingText font-semibold leading-[110%] tracking-tight">
+          <h1 className="lg:text-7xl md:text-5xl text-4xl text-headingText dark:text-whiteText dark:duration-300 font-semibold leading-[110%] tracking-tight">
             Helping Businesses Navigate the dynamic world of Meta platforms
           </h1>
           <ParagraphText
             text="We run effective ads & provide tailored designs for your business growth across meta platforms."
           />
-          <Button className="relative group" href="">
+          <Button className="relative group dark:hover:text-buttonTextHover " href="">
             Contact us{" "}
             <FaArrowRight className="md:text-xl text-base group-hover:invisible group-hover:opacity-0 duration-300" />
             <div className="absolute top-1/2 -translate-y-1/2 right-0 z-[-1] group-hover:translate-x-[120%] duration-300">
-              <FaWhatsapp className="md:text-3xl text-xl" />
+              <FaWhatsapp className="md:text-3xl text-xl dark:text-buttonTextHover" />
             </div>
           </Button>
           {/* <div className="sponsors flex lg:flex-row flex-col lg:items-center lg:gap-16 md:gap-3 gap-2">
@@ -181,13 +184,16 @@ const Introduction = () => {
         </div>
         <div className="figures lg:w-[588px] md:w-[330px] flex flex-wrap gap-y-4 lg:gap-y-5 justify-evenly">
           <div className="lg:w-[300px] lg:h-[281px] md:w-[150px] w-[169px] md:h-[158px] md:rounded-[20px] rounded-xl">
-            <img src={bannerIllustration} alt="" className="h-full w-full" />
+            <img src={bannerIllustration} alt="" className="h-full w-full dark:hidden dark:duration-300 duration-300" />
+            <img src={bannerIllustrationDark} alt="" className="h-full w-full hidden dark:block dark:duration-300 duration-300" />
           </div>
           <div className="lg:w-[259px] lg:h-[281px] md:w-[150px] w-[169px] md:h-[158px] md:rounded-[20px] rounded-xl bg-slate-300">
-            <img src={banner01} alt="" className="h-full w-full" />
+            <img src={banner01} alt="" className="h-full w-full dark:hidden dark:duration-300 duration-300" />
+            <img src={banner01Dark} alt="" className="h-full w-full hidden dark:block dark:duration-300 duration-300" />
           </div>
           <div className="w-full bg-slate-400 lg:h-[216px] rounded-[20px]">
-            <img src={banner02} alt="" className="h-full w-full" />
+            <img src={banner02} alt="" className="h-full w-full dark:hidden dark:duration-300 duration-300" />
+            <img src={banner02Dark} alt="" className="h-full w-full hidden dark:block dark:duration-300 duration-300" />
           </div>
         </div>
       </Container>

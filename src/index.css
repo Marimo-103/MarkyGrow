@@ -4,9 +4,13 @@
 
 :root {
     --Background: #fff;
+    --BackgroundDark: #24104B;
     --GradientBG1:#271D3E;
+    --GradientBG1Dark:#41DEF3;
     --GradientBG2: #472D6C;
+    --GradientBG2Dark: #f3f3f3;
     --paragraph: #9688B7;
+    --paragraphDark: #e6e5e5;
     --headings: #271D3E;
     --button: #41DEF3;
     --buttonText: #24104b;
