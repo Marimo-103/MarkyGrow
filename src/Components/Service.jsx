@@ -22,7 +22,7 @@ const Service = () => {
     {
       id: 3,
       title: "Customised Service",
-      link: "https://forms.gle/8bixY3N94JHZtoBa8",
+      link: "https://forms.gle/oA2WXMVuCvaRB4Fh9",
     },
   ];
 
@@ -67,7 +67,7 @@ const Service = () => {
                 <h3 className="lg:text-3xl text-xl text-center text-whiteText dark:text-BgDark font-bold">
                   {item.title}
                 </h3>
-                <a href="">
+                <a href={item.link} target="_blank">
                   <Button className="hover:text-whiteText dark:hover:text-buttonText dark:bg-buttonText dark:text-button dark:hover:bg-transparent dark:border-buttonText">
                     Take Service
                     <FaArrowRight />
