@@ -187,7 +187,7 @@ const Introduction = () => {
             <img src={bannerIllustration} alt="" className="h-full w-full dark:hidden dark:duration-300 duration-300" />
             <img src={bannerIllustrationDark} alt="" className="h-full w-full hidden dark:block dark:duration-300 duration-300" />
           </div>
-          <div className="lg:w-[259px] lg:h-[281px] md:w-[150px] w-[169px] md:h-[158px] md:rounded-[20px] rounded-xl bg-slate-300">
+          <div className="lg:w-[229px] lg:h-[261px] xl:w-[259px] xl:h-[281px] md:w-[150px] w-[169px] md:h-[158px] md:rounded-[20px] rounded-xl bg-slate-300">
             <img src={banner01} alt="" className="h-full w-full dark:hidden dark:duration-300 duration-300" />
             <img src={banner01Dark} alt="" className="h-full w-full hidden dark:block dark:duration-300 duration-300" />
           </div>

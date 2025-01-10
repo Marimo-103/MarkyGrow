@@ -18,7 +18,7 @@ const About = () => {
             <h3 className="lg:text-3xl text-xl text-headingText dark:text-whiteText font-medium leading-[120%] tracking-tight lg:mb-6 md:mb-3 mb-2">
               Who are we?
             </h3>
-            <ParagraphText text="MarkyGrow is more than just a Digital Marketing Agency. We are team of dedicated individuals who help businesses navigate the dynamic world of meta platforms. The mission is to empower businesses with data-driven meta strategies and innovative designs to achieve growth and maximize ROAS. The vision is to become the leading partner for businesses who depend on meta platforms for growth, Globally" />
+            <ParagraphText text="MarkyGrow is more than just a Digital Marketing Agency. We are team of dedicated individuals who help businesses navigate the dynamic world of meta platforms. The mission is to empower businesses with data-driven meta strategies and innovative designs to achieve growth and maximize ROAS. The vision is to become the leading partner for businesses who depend on meta platforms for growth, Globally." />
           </div>
           <div className="members lg:w-[45%] flex justify-center gap-x-5">
             <div className="child md:w-[300px] flex flex-col items-center gap-y-5">

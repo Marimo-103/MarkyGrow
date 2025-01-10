@@ -35,7 +35,7 @@ const Service = () => {
         <div className="head flex flex-col lg:flex-row gap-y-5 justify-center lg:mb-[75px] md:mb-9F mb-8">
           <Title
             className="text-headingText dark:text-whiteText text-center"
-            text="We provide the best services possible for business growth"
+            text="We provide the best services possible for business growth across Meta Platforms"
           />
           {/* <ParagraphText
             className="lg:w-[557px]"

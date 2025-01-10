@@ -20,7 +20,7 @@ const Footer = () => {
               <img src={footer_logo_dark} alt="Logo" />
             </a>
           </div>
-          <ParagraphText text="Want to launch you business on meta platforms? We got you covered. MakryGrow will provide one stop solution for launching you business across meta platforms. We provide full stack meta marketing services for your business growth." />
+          <ParagraphText text="Want to launch your business on meta platforms? We got you covered. MakryGrow will provide one stop solution for launching your business across meta platforms. We provide full stack meta marketing services for your business growth." />
           <div className="icons flex items-center gap-3">
             <div className="child lg:w-[34px] lg:h-[34px] w-[28px] h-[28px] rounded-full bg-white shadow-icons dark:shadow-iconsDark dark:hover:shadow-none dark:duration-300 hover:shadow-none border-transparent duration-300 flex items-center justify-center text-socialIcons border hover:border-button dark:bg-button dark:text-BgDark">
               <a
@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="navigation flex 2xl:gap-[115px] lg:gap-10 justify-between md:justify-normal md:gap-5">
+        <div className="navigation flex 2xl:gap-[115px] lg:gap-6 justify-between md:justify-normal md:gap-5">
           <ul className="flex flex-col lg:gap-y-6 gap-3">
             <h5 className="lg:text-lg text-base text-headingText dark:text-button dark:duration-300 duration-300 font-semibold lg:mb-6 mb-3">
               Navigation
@@ -94,7 +94,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <ul className="hidden md:flex flex-col lg:gap-y-6 gap-3">
+          {/* <ul className="hidden md:flex flex-col lg:gap-y-6 gap-3">
             <h5 className="lg:text-lg text-base text-headingText dark:text-button dark:duration-300 duration-300 font-semibold lg:mb-6 mb-3">
               Licence
             </h5>
@@ -122,7 +122,7 @@ const Footer = () => {
                 />
               </a>
             </li>
-          </ul>
+          </ul> */}
           <ul className="flex flex-col lg:gap-y-6 gap-3">
             <h5 className="lg:text-lg text-base text-headingText dark:text-button dark:duration-300 duration-300 font-semibold lg:mb-6 mb-3">
               Contacts
