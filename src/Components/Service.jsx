@@ -1,32 +1,36 @@
 import React from "react";
 import Container from "../Components/Container";
 import ParagraphText from "../Layers/ParagraphText";
-import { FaPlay } from "react-icons/fa";
+import { FaArrowRight, FaPlay } from "react-icons/fa";
 import service01 from "../assets/service_Img1.png";
 import service02 from "../assets/service_Img2.png";
 import Title from "../Layers/Title";
+import Button from "../Layers/Button";
 
 const Service = () => {
   let serviceArray = [
     {
       id: 1,
       title: "Full Stack F-commerce",
-      description: "we establish and manage your business presence on Facebook and Instagram, design unique logos and covers, create engaging post designs.",
+      link: "https://forms.gle/8bixY3N94JHZtoBa8",
     },
     {
       id: 2,
       title: "Meta Ads",
-      description: "we offer strategic campaign ideas and budgeting, create visually compelling ad designs, and craft persuasive ad copy.",
+      link: " https://forms.gle/qb5Nd7Pn8Xon4n1J8",
     },
     {
       id: 3,
       title: "Customised Service",
-      description: "enjoy services specifically tailored to your business requirements.",
+      link: "https://forms.gle/8bixY3N94JHZtoBa8",
     },
   ];
 
   return (
-    <section id="service" className="lg:pt-[135px] md:pt-20 pt-14 dark:bg-BgDark dark:duration-300 duration-300">
+    <section
+      id="service"
+      className="lg:pt-[135px] md:pt-20 pt-14 dark:bg-BgDark dark:duration-300 duration-300"
+    >
       <Container>
         <div className="head flex flex-col lg:flex-row gap-y-5 justify-center lg:mb-[75px] md:mb-9F mb-8">
           <Title
@@ -50,16 +54,25 @@ const Service = () => {
           </div>
         </div>
         <div className="service lg:pt-16 lg:pb-12 md:pt-10 md:pb-6 pt-8 pb-5">
-          <Title text="Our Services" className="text-headingText dark:text-whiteText text-center" />
+          <Title
+            text="Our Services"
+            className="text-headingText dark:text-whiteText text-center"
+          />
           <div className="flex flex-wrap md:flex-row flex-col gap-y-5 items-center justify-between mt-10">
             {serviceArray.map((item, index) => (
-              <div key={index} className="child lg:w-[400px] lg:h-[210px] md:w-[350px] md:h-[180px] w-[80%] h-[160px]  bg-gradient-to-b from-GradBackground01 to-GradBackground02 dark:from-GradBackground01Dark dark:to-GradBackground02Dark border md:rounded-[20px] rounded-xl lg:p-8 md:p-6 p-4 flex flex-col lg:gap-y-4 items-center justify-evenly duration-300 hover:scale-[1.1] hover:shadow-serviceBox dark:hover:shadow-serviceBoxDark cursor-pointer dark:duration-300">
-                <h3 className="lg:text-2xl text-whiteText dark:text-BgDark font-bold">
+              <div
+                key={index}
+                className="child lg:w-[400px] lg:h-[210px] md:w-[350px] md:h-[180px] w-[80%] h-[160px]  bg-gradient-to-b from-GradBackground01 to-GradBackground02 dark:from-GradBackground01Dark dark:to-GradBackground02Dark border md:rounded-[20px] rounded-xl lg:p-8 md:p-6 p-4 flex flex-col lg:gap-y-4 items-center justify-evenly duration-300 hover:scale-[1.1] hover:shadow-serviceBox dark:hover:shadow-serviceBoxDark cursor-pointer dark:duration-300"
+              >
+                <h3 className="lg:text-3xl text-xl text-center text-whiteText dark:text-BgDark font-bold">
                   {item.title}
                 </h3>
-                <p className="lg:text-sm text-xs text-whiteText dark:text-BgDark font-normal leading-[180%] text-center">
-                  {item.description}
-                </p>
+                <a href="">
+                  <Button className="hover:text-whiteText dark:hover:text-buttonText dark:bg-buttonText dark:text-button dark:hover:bg-transparent dark:border-buttonText">
+                    Take Service
+                    <FaArrowRight />
+                  </Button>
+                </a>
               </div>
             ))}
           </div>

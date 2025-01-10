@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import logo from "/markygrowLogo_whole_rezize.svg";
+import logoDark from "/markygrowLogo_whole_rezize_dark.svg";
 import Container from "./Container";
 import {
   FaChevronDown,
@@ -7,9 +8,11 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
-import Switch from "../Layers/Switch";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import ParagraphText from "../Layers/ParagraphText";
+import { Switch } from "@mui/material";
+import { MdDarkMode } from "react-icons/md";
+import { CiLight } from "react-icons/ci";
 
 const Navbar = () => {
   let [showMenu, setShowMenu] = useState(false);
@@ -61,7 +64,13 @@ const Navbar = () => {
 
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
   useEffect(() => {
-    document.body.className = theme;
+    if (theme === "light") {
+      document.body.classList.add("light");
+      document.body.classList.remove("dark");
+    } else {
+      document.body.classList.add("dark");
+      document.body.classList.remove("light");
+    }
     localStorage.setItem("theme", theme);
   }, [theme]);
   const toggleTheme = () => {
@@ -69,11 +78,20 @@ const Navbar = () => {
   };
 
   return (
-    <div className="lg:py-[30px] md:py-6 py-4 bg-white dark:bg-BgDark dark:duration-300 border-b dark:border-BgDark drop-shadow-md dark:drop-shadow-2xl sticky top-0 left-0 w-full z-50">
+    <div className="lg:py-[30px] md:py-6 py-4 bg-white dark:bg-BgDark dark:duration-300 duration-300 border-b dark:border-BgDark drop-shadow-md dark:drop-shadow-2xl sticky top-0 left-0 w-full z-50">
       <Container className="flex justify-between items-center z-50">
         <div className="logo lg:w-[139px] lg:h-8 md:w-[130px] w-[110px]">
-          <a href="#">
+          <a
+            href="#"
+            className="dark:hidden block dark:duration-300 duration-300"
+          >
             <img src={logo} alt="" />
+          </a>
+          <a
+            href="#"
+            className="hidden dark:block dark:duration-300 duration-300"
+          >
+            <img src={logoDark} alt="" />
           </a>
         </div>
         <nav className="">
@@ -135,10 +153,14 @@ const Navbar = () => {
                   </a>
                 </div>
               </div>
-              <button className="flex gap-1 items-center" onClick={toggleTheme}>
+              <div className="flex items-center gap-2">
                 <ParagraphText text="Theme:" />
-                <div className="">{theme === "light" ? "Dark" : "Light"}</div>
-              </button>
+                <button className="flex gap-0 items-center">
+                  <CiLight className="text-xl text-headingText dark:text-whiteText duration-300 dark:duration-300" />
+                  <Switch checked={theme === "dark"} onChange={toggleTheme} />
+                  <MdDarkMode className="text-xl text-headingText dark:text-whiteText duration-300 dark:duration-300" />
+                </button>
+              </div>
               {/* <div className="theme">
                 <Switch />
               </div> */}
@@ -156,17 +178,14 @@ const Navbar = () => {
           </div>
         </nav>
         <div className="btn hidden lg:flex items-center lg:gap-5">
-          {/* <div className="theme">
-
-            <select name="" id="" className=" border px-4">
-              <option value="light">Light</option>
-              <option value="dark">Dark</option>
-            </select>
-          </div> */}
-          <button className="flex gap-1 items-center" onClick={toggleTheme}>
+          <div className="flex items-center gap-2">
             <ParagraphText text="Theme:" />
-            {theme === "light" ? "Dark" : "Light"}
-          </button>
+            <button className="flex gap-0 items-center">
+              <CiLight className="text-xl text-headingText dark:text-whiteText duration-300 dark:duration-300" />
+              <Switch checked={theme === "dark"} onChange={toggleTheme} />
+              <MdDarkMode className="text-xl text-headingText dark:text-whiteText duration-300 dark:duration-300" />
+            </button>
+          </div>
           <div className="icons flex items-center gap-3">
             <div className="child lg:w-[34px] lg:h-[34px] w-[28px] h-[28px] rounded-full bg-white shadow-icons dark:shadow-iconsDark dark:hover:shadow-none dark:duration-300 hover:shadow-none border-transparent duration-300 flex items-center justify-center text-socialIcons border hover:border-button dark:bg-button dark:text-BgDark">
               <a
@@ -193,10 +212,6 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-
-          {/* <div className="theme">
-            <Switch onclick={handleThemeSwitch} />
-          </div> */}
         </div>
       </Container>
     </div>

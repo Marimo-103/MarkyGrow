@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "./Container";
-import footer_logo from "/footer_logo.png";
+import footer_logo from "/markygrowLogo_whole_rezize.svg";
+import footer_logo_dark from "/markygrowLogo_whole_rezize_dark.svg";
 import ParagraphText from "../Layers/ParagraphText";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { BiSolidPhone } from "react-icons/bi";
@@ -12,8 +13,11 @@ const Footer = () => {
       <Container className="flex flex-col md:flex-row gap-y-8 justify-between lg:py-8 py-4">
         <div className="text flex flex-col lg:gap-[30px] gap-4 2xl:w-[534px] lg:w-[434px] md:w-[350px] ">
           <div className="logo lg:w-[300px] md:w-[230px] w-[150px]">
-            <a href="#">
+            <a href="#" className="dark:hidden block dark:duration-300 duration-300">
               <img src={footer_logo} alt="Logo" />
+            </a>
+            <a href="#" className="hidden dark:block dark:duration-300 duration-300">
+              <img src={footer_logo_dark} alt="Logo" />
             </a>
           </div>
           <ParagraphText text="Want to launch you business on meta platforms? We got you covered. MakryGrow will provide one stop solution for launching you business across meta platforms. We provide full stack meta marketing services for your business growth." />
