@@ -14,7 +14,7 @@ const Portfolio = () => {
           text="Real-world examples of how we have helped companies achieve their marketing objectives."
           className="text-center text-headingText dark:text-whiteText lg:mb-10 mb-6"
         />
-        <div className="slider lg:max-w-[1344px] lg:pl-16">
+        <div className="slider lg:max-w-[1344px] lg:px-7 px-4">
           <PortfolioSlider />
         </div>
       </Container>

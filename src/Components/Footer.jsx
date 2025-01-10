@@ -94,7 +94,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <ul className="flex flex-col lg:gap-y-6 gap-3">
+          <ul className="hidden md:flex flex-col lg:gap-y-6 gap-3">
             <h5 className="lg:text-lg text-base text-headingText dark:text-button dark:duration-300 duration-300 font-semibold lg:mb-6 mb-3">
               Licence
             </h5>
@@ -129,18 +129,18 @@ const Footer = () => {
             </h5>
             <li className=" flex items-center lg:gap-2 gap-1">
               <BiSolidPhone className="text-button lg:text-xl" />
-              <a href="#">
+              <a href="tel:+8801306231753">
                 <ParagraphText
-                  text="(406) 555-0120"
+                  text="+88 01306231753"
                   className="hover:text-buttonText duration-300"
                 />
               </a>
             </li>
             <li className=" flex items-center lg:gap-2 gap-1">
               <HiMail className="text-button lg:text-xl" />
-              <a href="#service">
+              <a href="mailto:agency@markygrow.com">
                 <ParagraphText
-                  text="Hey@admin.com"
+                  text="agency@markygrow.com"
                   className="hover:text-buttonText duration-300"
                 />
               </a>

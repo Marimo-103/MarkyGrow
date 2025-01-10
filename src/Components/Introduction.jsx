@@ -21,7 +21,7 @@ const Introduction = () => {
           <ParagraphText
             text="We run effective ads & provide tailored designs for your business growth across meta platforms."
           />
-          <Button className="relative group dark:hover:text-buttonTextHover " href="">
+          <Button className="relative group dark:hover:text-buttonTextHover " href="#contact">
             Contact us{" "}
             <FaArrowRight className="md:text-xl text-base group-hover:invisible group-hover:opacity-0 duration-300" />
             <div className="absolute top-1/2 -translate-y-1/2 right-0 z-[-1] group-hover:translate-x-[120%] duration-300">
@@ -183,7 +183,7 @@ const Introduction = () => {
           </div> */}
         </div>
         <div className="figures lg:w-[588px] md:w-[330px] flex flex-wrap gap-y-4 lg:gap-y-5 justify-evenly">
-          <div className="lg:w-[300px] lg:h-[281px] md:w-[150px] w-[169px] md:h-[158px] md:rounded-[20px] rounded-xl">
+          <div className="xl:w-[300px] xl:h-[281px] lg:w-[280px] lg:h-[271px] md:w-[150px] w-[169px] md:h-[158px] md:rounded-[20px] rounded-xl">
             <img src={bannerIllustration} alt="" className="h-full w-full dark:hidden dark:duration-300 duration-300" />
             <img src={bannerIllustrationDark} alt="" className="h-full w-full hidden dark:block dark:duration-300 duration-300" />
           </div>

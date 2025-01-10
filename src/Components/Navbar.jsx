@@ -35,7 +35,7 @@ const Navbar = () => {
     }
     size();
     window.addEventListener("resize", size);
-  }, []);
+  }, [showMenu]);
   // useEffect(() => {
   //   let handler = (e) => {
   //     if (!menuRef.current.contains(e.target)) {
@@ -153,8 +153,7 @@ const Navbar = () => {
                   </a>
                 </div>
               </div>
-              <div className="flex items-center gap-2">
-                <ParagraphText text="Theme:" />
+              <div>
                 <button className="flex gap-0 items-center">
                   <CiLight className="text-xl text-headingText dark:text-whiteText duration-300 dark:duration-300" />
                   <Switch checked={theme === "dark"} onChange={toggleTheme} />
@@ -178,8 +177,7 @@ const Navbar = () => {
           </div>
         </nav>
         <div className="btn hidden lg:flex items-center lg:gap-5">
-          <div className="flex items-center gap-2">
-            <ParagraphText text="Theme:" />
+          <div>
             <button className="flex gap-0 items-center">
               <CiLight className="text-xl text-headingText dark:text-whiteText duration-300 dark:duration-300" />
               <Switch checked={theme === "dark"} onChange={toggleTheme} />

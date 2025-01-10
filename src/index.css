@@ -18,3 +18,10 @@
     --whiteText: #fff;
     --socialIcons: #41DEF3;
 }
+
+.slick-prev::before {
+    color: var(--button) !important;
+}
+.slick-next::before {
+    color: var(--button) !important;
+}

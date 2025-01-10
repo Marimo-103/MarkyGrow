@@ -64,7 +64,7 @@ const PortfolioSlider = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           dots: false,
-          arrows: false,
+          arrows: true,
         },
       },
     ],
